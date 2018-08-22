@@ -22,6 +22,6 @@
   - name: start httpd
     service: name=httpd state=running
   
-handlers:
+  handlers:
   - name: restart apache
     service: name=httpd state=restarted
