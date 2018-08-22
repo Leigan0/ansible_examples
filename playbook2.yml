@@ -1,0 +1,7 @@
+---
+- name: update yum
+  connection: local
+
+  tasks:
+    - name: Run yum update
+      yum: update_cache=yes
