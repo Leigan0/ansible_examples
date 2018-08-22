@@ -1,6 +1,7 @@
 ---
 - name: update yum
   connection: local
+  hosts: localhost 
 
   tasks:
     - name: Run yum update
