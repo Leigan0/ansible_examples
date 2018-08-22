@@ -18,4 +18,18 @@
         state: latest
     
     - name: start httpd
-      service: name=httpd state=running
+      service: name=httpd state=started
+
+    - name: Install main configuration file
+      template:
+        src: httpd.conf.j2
+        dest: "/etc/httpd.conf"
+        owner: root
+        group: root
+        setype: httpd_config_t
+      notify: restart httpd
+  
+  
+  handlers:
+  - name: restart apache
+    service: name=httpd state=restarted
