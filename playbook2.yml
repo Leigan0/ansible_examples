@@ -10,7 +10,7 @@
       vars:
         packages:
         - httpd
-        - httpd tools
+        - httpd-tools
     
     - name: upgrade all packages
       yum:
