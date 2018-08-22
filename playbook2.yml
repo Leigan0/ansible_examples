@@ -16,3 +16,6 @@
       yum:
         name: '*'
         state: latest
+    
+      - name: start httpd
+        service: name=httpd state=running
