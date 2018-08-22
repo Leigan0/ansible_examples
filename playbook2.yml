@@ -17,5 +17,5 @@
         name: '*'
         state: latest
     
-      - name: start httpd
-        service: name=httpd state=running
+    - name: start httpd
+      service: name=httpd state=running
