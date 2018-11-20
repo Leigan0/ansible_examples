@@ -27,7 +27,7 @@
         owner: root
         group: root
         setype: httpd_config_t
-      notify: restart httpd
+      notify: restart apache
   
   
   handlers:
